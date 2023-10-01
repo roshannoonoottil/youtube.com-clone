@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.main{
+    font-family: -apple-system, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.logo{
+    height: 20px;
+    margin-left: 0.5rem;
+}
+form{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 4rem 0 10rem;
+}
+input[type="search"]{
+    width: 100%;
+    height: 2rem;
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: solid 1px #ccc;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+    border-right:none;
+
+}
+.search-btn{
+    height: 2rem;
+    padding: 0.3rem;
+    border: solid 1px #ccc;
+    border-radius: 0.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0 ;
+
+}
+.icon_menu{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 1rem;
+    align-items: center;
+}
+.video-icon{
+    border-radius: 50%;
+    background : #aaa;
+}
+.propic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.icop{
+    width: 30px;
+    height: 30px;
+}
+/* ....menu sections.... */
+.section-principal{
+    display: flex;
+}
+.menu1{
+    flex: 1;
+    max-width: 18%;
+    margin-top: 1.2rem;
+    
+}
+.menu2{
+    flex: 1;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+.menu1 ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.list{
+    padding: 0.8rem 1.5rem;
+}
+.list-active{
+    padding: 0.8rem 1.5rem;
+    background: #ccc;
+}
+li a{
+    text-decoration: none;
+    color:#626161;
+}
+li a{
+    display: flex;
+    align-items: center;
+}
+.list-text{
+    margin-left: 1.2rem;
+}
+.list:hover, li.active{
+    background: #ccc;
+}
+ul h2{
+    padding: 1.5rem;
+    color: rgb(163, 163, 163);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+    gap: 2rem 1rem;
+}
+.video{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.video::before{
+    content: attr(data-duration);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    bottom: 34%;
+    right: 1rem;
+}
+.cover-video{
+    width: 100%;
+    height: 100%;
+    min-width: 253px;
+    min-height: 142px;
+    background: #aaa;
+}
+.video-section{
+    display: flex;
+    margin-top: 0.8rem;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.video-title{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #000000;
+}
+.Channal, .meta{
+    text-decoration: none;
+    color: #6b6b6b;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
